@@ -1,1 +1,161 @@
+java :
+it is an object oriented programming language. All the code which we write in java is written around the object. 
+java is platform independent, object oriented, architecture neutral.
 
+James gosling is considered as the father of java. there were 16 people in the team of james gosling. it was released in the year 1996. it's development started in 1991. 
+What was the original purpose of developing java.
+they wanted to create a language which is more secure, object oriented, platform independent. its development specifically started for microwave devices.
+
+JVM- Java Virtual Machine  - it is the platform on which all the java programs run. it creates a layer upon the existing operating system on which all java code works without any problem.
+
+JRE - Java Runtime Environment - it provides an environment for the programs to run. Also it is responsible for loading and unloading of programs on JVM so that it doesn't create an overhead on JVM.  
+
+Byte Code :  it is a special code which runs on jvm. it is created when our code file is debugged or compiled. When we compile our code then a .class file gets generated, which contains the byte code.
+
+
+class FirstDemo
+{
+	public static void main(String args[])
+	{
+		kdjfkd
+	}
+}
+
+-> class : class is a container which contains methods, variables, constructors etc. it is a blueprint of an object. the behaviour of the object depends upon the methods.
+
+
+-> object : 
+is an instance of a class
+is a real world entity
+
+it represents any real world entity which have behaviour and attributes like car
+car - attributes  - number of seats, tyres, steering wheel, break etc. - variables
+    - behaviour -  start the engine, increase the speed, stop the car when breaks are applied, playing music etc  --  methods
+
+main method : it is known as the entry point of java programs. from where our program starts its execution. 
+
+public :-  it is an access modifier. if we are using public keyword before a method, variable or a class, then it is available from anywhere. from within class, from other class, from other package, from any other project
+
+static  :-  it is used to create a variable, method as static, which means its memory will be allocated only once, but is sharable.
+
+void :-  it is a return type which is used with methods. which means that this particular method will not return any value to the calling function in the program. 
+
+String:- it is a sequence of characters, which is used to store information. It is a pre-defined class of java. It is non-primitive data type.
+
+args[]  : represents a single dimension empty array which stores arguments which we receive from command line while running the program.
+
+[16:11, 05/10/2024] +91 78978 07507: class Demo
+{
+	public static void main(String args[])
+	{
+
+		//print a message
+		System.out.println("Hello World!!");
+
+		VarDemo vd1 = new VarDemo();
+		vd1.x+=100;
+		vd1.y+=100;
+
+		vd1.display();
+
+		VarDemo vd2 = new VarDemo();
+		vd2.x+=10;
+		vd2.y+=10;
+
+		vd2.display();
+		
+	}
+}
+// vardemo -  y=1000+100=1100+10=  1110
+
+// vd1  
+//    x= 100
+// display()
+
+// vd2 
+// x=100
+// display()
+
+// vd1.x=100+100=200
+// vd1.y=1000+100=1100
+
+// vd2.x= 110
+// vd2.y= 1010  / 1110
+[16:12, 05/10/2024] +91 78978 07507: class VarDemo
+{
+	int x=100;  // global variable
+	static int y=1000; // static variable  - sharable resource in all the objects. 
+
+	public void display()
+	{
+		int a=10;  // local variable
+		
+		System.out.println("x :"+x);
+		System.out.println("y :"+y);
+	}
+}
+
+Introduction to java
+applications of java
+types of variables
+	- local variable
+	- global variable/instance variable
+	- static variables
+
+ASCII  -  1 byte   256 chars  - charset of 256 
+Unicode - 2 bytes  65535 chars
+Data types :-
+	 size java	c
+char  -  2 bytes	1 byte
+byte   -  1 byte	-128 to 127
+short -  2 bytes        -32768 to 32767
+int  -  4 bytes   – 2,147,483,648 (-231) to 2,147,483,647 (231 -1)
+long  - 8 bytes    -9,223,372,036,854,775,808(-263) to 9,223,372,036,854,775,807(263 -1)
+
+float  -  4 bytes  
+double -  8 bytes
+
+Boolean : it is used to store logical value(True/False).
+
+Operators :
+	1. Arithmetic operators +-*/%
+	2. increment/decrement operators  ++, --
+	Increment Operator (++)  var++  
+	a=10,  a++ =  a=11
+	Pre-Increment/ Post-Increment
+	Pre-Decrement/ post-decrement
+
+	a=10 11 10, b=10 11 10
+	c = a++ + b++ + --a + --b
+	c = 10  + 10  + 10  + 10= 40
+	38/48/40/49/42
+
+	a=10 9 10, b=10 9 10
+	c = --a + a++ + b-- + ++b
+	c =  9  + 9   + 10  + 10 =  38 
+	38/31/33/39/40
+	
+	103/ 13 24 103./ 101
+	
+	int a=11 12 13, b=22 23 24, c;
+         
+        c = a + b + a++ + b++ + ++a + ++b;
+	C = 11+ 22+ 11  + 22  + 13  + 24
+
+	3. Relational operators :  -   > < >= <= == !=
+	4. Logical Operators : -  && || !
+	5. Ternary Operators :  condition? True statement : False Statement;
+
+Q1. Wap to check whether an year is leap or not?
+	(Year%4==0  && year%100!=0)  || year%400==0  leap year
+Q2. Wap to check the experience of an employee, if exp is greater than 20 years then calculate bonus=20% salary, else calculate bonus = 10% of salary.
+Q3. Wap to check if a person is eligible to vote or not.
+Q4. Wap to check whether  a character is in lower case or upper case.
+Q5. Wap to check whether a number is negative or positive or zero.
+Q6. Wap to print pass or fail according to marks.
+Q7. Wap to check whether a character is vowel or not.
+Q8. Wap to check whether a number is even or odd.
+Q9. 1. Check whether the character is alphabet or not
+// 2. If character is alphabet then check if it is in lower case or upper case
+//3. If it is in upper case then convert it into lower case
+//4. Check if it is vowel or not
